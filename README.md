@@ -1,4 +1,4 @@
-# SosyalEtkinlikWEB
+# SosyalEtkinlikWEB MVC based with .NET Core
 This project has been created using MS Sql, .NET Core and MVC based.
 
 ## Starting the Project
