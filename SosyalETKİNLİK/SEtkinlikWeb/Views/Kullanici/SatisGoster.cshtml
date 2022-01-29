@@ -1,0 +1,44 @@
+﻿@model List<SosyalEtkinlikWEB.Entities.Satis>;
+@using SosyalEtkinlikWEB.Entities;
+@{
+    ViewData["Title"] = "SatisGoster";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+
+<form class="form-group" method="post">
+    <h2>Satışlarınız</h2>
+    @if (Model != null)
+    {
+        @foreach (var item in Model)
+        {
+            <a href="@Url.Action("SGcevirici",new {id=item.Eid})"><input type="button" class="btn btn-danger pull-right" value="Geri Dön" /></a>
+            <h3>Katılanın Katılış Bilgileri;</h3>
+            <div>
+                <label>Etkinliğin ID'si :</label>
+                <label class="form-control">@item.Eid</label>
+            </div>
+            <div>
+                <label>İletişimi :</label>
+            </div>
+            <label class="form-control">@item.KEmail</label>
+            <div>
+                <label>Katılım Sayısı:</label>
+                <label class="form-control">@item.SBiletAdeti Kişi </label>
+            </div>
+            <div>
+                <label>Ödenecek Ücret:</label>
+                <label class="form-control">@item.SOdenecekTutar TL</label>
+            </div>
+            <div>
+                <a href="@Url.Action("SatisSil", new { id = item.Sid })"><input type="button" class="btn btn-success" />SİL</a>
+                <a href="@Url.Action("SatisGuncelle", new { id = item.Sid })"><input type="button" class="btn btn-success" />GÜNCELLE</a>
+            </div>
+            <br />
+            <br />
+
+        }
+    }
+</form>
+

@@ -1,0 +1,69 @@
+﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@model SosyalEtkinlikWEB.Entities.Satis
+
+
+@{
+    ViewData["Title"] = "SatisEkle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<h2>Gerekli Bilgileri Giriniz</h2>
+<form asp-controller="Etkinlik" asp-action="SatisEkle" class="form-group" method="post">
+    <a asp-area="" asp-controller="Etkinlik" asp-action="EtkinlikGoruntule" class="btn btn-danger pull-right">Geri Dön</a>
+    <table class="table table-bordered">
+        <tr>
+            <th></th>
+            <th>Katılmak İstediğiniz Etkinliğin Bilgileri;</th>
+        </tr>
+        <tr>
+            <th>Kategorisi:</th>
+            <td class="form-control">@Model.Etkinlikler.Kategori</td>
+        </tr>
+        <tr>
+            <th>Açıklama:</th>
+            <td class="form-control">@Model.Etkinlikler.EIcerik</td>
+        </tr>
+
+        <tr>
+            <th>Tarihi:</th>
+            <td class="form-control">@Model.Etkinlikler.ETarih</td>
+        </tr>
+        <tr>
+            <th>Ücreti:</th>
+            <td class="form-control">@Model.Etkinlikler.EUcret TL</td>
+        </tr>
+        <tr>
+            <th>Katılım Kapasitesi:</th>
+            <td class="form-control">@Model.Etkinlikler.EBiletAdet Kişi</td>
+        </tr>
+    </table>
+    <table>
+        <tr>
+            <th><label asp-for="Eid" class="invisible"></label></th>
+            <th><input asp-for="Eid" class="invisible" /></th>
+        </tr>
+        <tr>
+            <th><label asp-for="KEmail">E-mail Adresiniz & Ya da Telefon Numaranız*:</label></th>
+            <td>
+                <input asp-for="KEmail" class="form-control" required="" maxlength="50"/>
+                @Html.ValidationMessageFor(m => m.KEmail, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th><label asp-for="SBiletAdeti">Katılım Sayınız*:</label></th>
+            <td>
+                <input asp-for="SBiletAdeti" class="form-control" required="" min="1" max="@Model.Etkinlikler.EBiletAdet" />
+                @Html.ValidationMessageFor(m => m.SBiletAdeti, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th><label asp-for="SOdenecekTutar" class="invisible"></label></th>
+            <td>
+                <input asp-for="SOdenecekTutar" class="invisible" />
+            </td>
+        </tr>
+
+        <tr style="margin-top:15px">
+            <td><button class="btn btn-info" type="submit">Etkinliğe Katıl</button></td>
+        </tr>
+    </table>
+</form>

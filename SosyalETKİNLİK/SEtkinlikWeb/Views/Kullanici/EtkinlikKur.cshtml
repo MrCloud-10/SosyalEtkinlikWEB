@@ -1,0 +1,66 @@
+﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@model SosyalEtkinlikWEB.Entities.Etkinlikler
+@{
+    ViewData["Title"] = "EtkinlikKur";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<h2>Etkinlik Kur</h2>
+
+<form asp-controller="Kullanici" asp-action="EtkinlikKur" class="form-group" method="post">
+    <table>
+        <tr>
+            <th><label asp-for="Kid" class="invisible"></label></th>
+            <th><input asp-for="Kid" class="invisible" /></th>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="Kategori">Kategorisi :</label>
+            </th>
+            <td>
+                <input asp-for="Kategori" class="form-control" maxlength="50" />
+                @Html.ValidationMessageFor(m => m.Kategori, "", new { @style = "color:blue" })
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="EIcerik">İçeriği :</label>
+            </th>
+            <td>
+                <input asp-for="EIcerik" class="form-control" maxlength="500" />
+                @Html.ValidationMessageFor(m => m.EIcerik, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="EUcret">Ücreti(TL.KR) :</label>
+            </th>
+            <td>
+                <input asp-for="EUcret" class="form-control" min="0"  />
+                @Html.ValidationMessageFor(m => m.EUcret, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="EBiletAdet">Katılım Kapasitesi :</label>
+            </th>
+            <td>
+                <input asp-for="EBiletAdet" class="form-control" min="1"/>
+                @Html.ValidationMessageFor(m => m.EBiletAdet, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="ETarih">Tarihi :</label>
+            </th>
+            <td>
+                <input asp-for="ETarih" class="form-control" />
+                @Html.ValidationMessageFor(m => m.ETarih, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th><button type="submit" class="btn btn-success" style="margin-top:15px" >EKLE</button></th>
+        </tr>
+    </table>
+
+</form>

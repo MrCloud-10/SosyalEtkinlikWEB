@@ -1,0 +1,58 @@
+﻿@model List<SosyalEtkinlikWEB.Entities.Etkinlikler>;
+@using SosyalEtkinlikWEB.Entities;
+@{
+    ViewData["Title"] = "AnaSayfa";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+<h2>ETKİNLİKLERİMİZ</h2>
+
+@using (Html.BeginForm("EtkinlikGoruntule", "Etkinlik", FormMethod.Get))
+{
+    <p>
+        <b>Aranacak Kategori:</b> @Html.TextBox("str")
+        <input type="submit" value="Ara" />
+    </p>
+}
+
+<br />
+<br />
+
+<table>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>Etkinlik Sahibi:</th>
+            <td class="form-control">@item.Kullanici.KAd @item.Kullanici.KSoyad</td>
+        </tr>
+        <tr>
+            <th>Etkinlik Sahibinin İletişimi:</th>
+            <td class="form-control">@item.Kullanici.KEmail</td>
+        </tr>
+        <tr>
+            <th>Kategorisi:</th>
+            <td class="form-control">@item.Kategori</td>
+        </tr>
+        <tr>
+            <th>Açıklama:</th>
+            <td class="form-control">@item.EIcerik</td>
+        </tr>
+
+        <tr>
+            <th>Tarihi:</th>
+            <td class="form-control">@item.ETarih</td>
+        </tr>
+        <tr>
+            <th>Ücreti:</th>
+            <td class="form-control">@item.EUcret TL</td>
+        </tr>
+        <tr>
+            <th>Katılım Kapasitesi:</th>
+            <td class="form-control">@item.EBiletAdet Kişi</td>
+        </tr>
+        <tr>
+            <th></th>
+            <th><a href="@Url.Action("SatisEkle", new { id = item.Eid })"><input type="button" class="btn btn-success">Etkinliğe Katıl</a></th>
+        </tr>
+        <tr><th><br /></th></tr>
+        }
+</table>

@@ -1,0 +1,57 @@
+﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@model SosyalEtkinlikWEB.Entities.Kullanici
+@{
+    ViewData["Title"] = "Sayfam";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form class="form-group" method="post">
+    <h2>Sayfanız;</h2>
+    <a asp-area="" asp-controller="Etkinlik" asp-action="Index"  class="btn btn-warning pull-right" style="margin-top:15px" > Çıkış</a>
+    <table>
+        <tr>
+            <th>
+                <label asp-for="KAd">Adınız :</label>
+            </th>
+            <td>
+                <input asp-for="KAd" name="@Model.KAd"  class="form-control" readonly/>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="KSoyad">Soyadınız :</label>
+            </th>
+            <td>
+                <input asp-for="KSoyad" name="@Model.KSoyad" class="form-control" readonly/>
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="KEmail">E-mail Adresiniz :</label>
+            </th>
+            <td>
+                <input type="email" asp-for="KEmail" name="@Model.KEmail" class="form-control" readonly />
+
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="KSifre">Şifreniz :</label>
+            </th>
+            <td>
+                <input asp-for="KSifre" name="@Model.KSifre" class="form-control" readonly />
+
+            </td>
+        </tr>
+        <tr>
+            <th style="margin-top:15px"><a href="@Url.Action("KullaniciSil", new { id = Model.Kid })"><input type="button" class="btn btn-danger" />KAYDIMI SİL</a></th>
+            <th style="margin-top:15px"><a href="@Url.Action("KullaniciGuncelle", new { id = Model.Kid })"><input type="button" class="btn btn-success"  />BİLGİLERİMİ GÜNCELLE</a></th>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <a href="@Url.Action("EtkinlikGoster", new { id = Model.Kid })"><input type="button" class="btn btn-primary"><b> Etkinliklerim</b></a>
+    <a href="@Url.Action("SatisGoster",new { id = Model.Kid })"><input type="button" class="btn btn-primary"><b>Satışlarım</b></a>
+    <a href="@Url.Action("EtkinlikKur",new {id =Model.Kid})"><input type="button" class="btn btn-primary"><b>Etkinlik Kur</b></a>
+</form>

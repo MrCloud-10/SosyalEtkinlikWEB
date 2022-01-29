@@ -1,0 +1,22 @@
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.deps.json
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.runtimeconfig.json
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.runtimeconfig.dev.json
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.dll
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.csprojAssemblyReference.cache
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.AssemblyInfoInputs.cache
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.AssemblyInfo.cs
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.pdb
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.dll
+C:\Users\yusuf\Desktop\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.pdb
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.deps.json
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.runtimeconfig.json
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.runtimeconfig.dev.json
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.dll
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\bin\Debug\netcoreapp2.0\SEtkinlikWeb.pdb
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.csprojAssemblyReference.cache
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.csproj.CoreCompileInputs.cache
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.AssemblyInfoInputs.cache
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.AssemblyInfo.cs
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.dll
+C:\Users\yusuf\Desktop\YUSUF ÜNİ\WTWP\05160000566_Yusuf BULUT\SosyalETKİNLİK\SEtkinlikWeb\obj\Debug\netcoreapp2.0\SEtkinlikWeb.pdb

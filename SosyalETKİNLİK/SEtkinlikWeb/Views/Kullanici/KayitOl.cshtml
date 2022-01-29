@@ -1,0 +1,54 @@
+﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@model SosyalEtkinlikWEB.Entities.Kullanici;
+
+@{
+    ViewData["Title"] = "Kayıt Ol";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<h2>KAYIT OL</h2>
+
+<form method="post">
+    <table>
+        <tr>
+            <th>
+                <label asp-for="KAd">Adınız :</label>
+            </th>
+            <td>
+                <input asp-for="KAd" class="form-control" />
+                @Html.ValidationMessageFor(m => m.KAd, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="KSoyad">Soyadınız :</label>
+            </th>
+            <td>
+                <input asp-for="KSoyad" class="form-control" />
+                @Html.ValidationMessageFor(m => m.KSoyad, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="KEmail">E-mail Adresiniz :</label>
+            </th>
+            <td>
+                <input type="email" asp-for="KEmail" class="form-control" />
+                @Html.ValidationMessageFor(m => m.KEmail, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th>
+                <label asp-for="KSifre">Şifreniz :</label>
+            </th>
+            <td>
+                <input asp-for="KSifre" class="form-control" />
+                @Html.ValidationMessageFor(m => m.KSifre, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th><button type="submit" class="btn btn-success" style="margin-top:15px">KAYDOL</button></th>
+        </tr>
+    </table>
+    <div><a class="btn btn-primary" style="margin-top:15px" asp-controller="Kullanici" asp-action="Giris" ="Giriş">Zaten Hesabım Var</a></div>
+</form>

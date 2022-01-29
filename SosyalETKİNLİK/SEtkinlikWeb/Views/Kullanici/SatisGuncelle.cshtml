@@ -1,0 +1,45 @@
+﻿@addTagHelper*,Microsoft.AspNetCore.Mvc.TagHelpers
+@model SosyalEtkinlikWEB.Entities.Satis
+@{
+    ViewData["Title"] = "SatisGuncelle";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+<form asp-controller="Kullanici" asp-action="SatisGuncelle" class="form-group" method="post">
+    <h2>Satış İşelimini Güncelleyiniz ;</h2>
+    <table>
+        <tr>
+            <th><label asp-for="Sid" >Satış İd: </label></th>
+            <th><input asp-for="Sid"  class="form-control" readonly /></th>
+        </tr>
+        <tr>
+            <th><label asp-for="Eid" >Etkinliğin İd: </label></th>
+            <th><input asp-for="Eid" class="form-control" readonly /></th>
+        </tr>
+        <tr>
+            <th><label asp-for="KEmail">E-mail Adresi &  Telefon Numarası:</label></th>
+            <td>
+                <input asp-for="KEmail" class="form-control" required maxlength="50"/>
+                @Html.ValidationMessageFor(m => m.KEmail, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th><label asp-for="SBiletAdeti">Katılım Sayısı:</label></th>
+            <td>
+                <input asp-for="SBiletAdeti"  class="form-control" min="1" max="@Model.Etkinlikler.EBiletAdet" readonly/>
+                @Html.ValidationMessageFor(m => m.SBiletAdeti, "", new { @style = "color:blue" })
+            </td>
+        </tr>
+        <tr>
+            <th><label asp-for="SOdenecekTutar">Ödenecek Tutar: </label></th>
+            <td>
+                <input asp-for="SOdenecekTutar" class="form-control" required min="0" />
+            </td>
+        </tr>
+        <tr>
+            <th></th>
+            <th><button class="btn btn-success" type="submit" style="margin-top:15px">Satışı Güncelle</button></th>
+        </tr>
+    </table>
+</form>
+

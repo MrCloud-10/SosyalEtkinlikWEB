@@ -1,0 +1,51 @@
+﻿@model List<SosyalEtkinlikWEB.Entities.Etkinlikler>;
+@using SosyalEtkinlikWEB.Entities;
+@{
+    ViewData["Title"] = "EtkinlikGoster";
+    Layout = "~/Views/Shared/_MainLayout.cshtml";
+}
+
+
+
+<form class="form-group" method="post">
+    <h2>Oluşturduğunuz Etkinlikler</h2>
+
+    @if (Model != null)
+    {
+        @foreach (var item in Model)
+        {
+            <a href="@Url.Action("EGcevirici",new {id=item.Kid})"><input type="button" class="btn btn-danger pull-right" value="Geri Dön" /></a>
+            <div>
+                <label>Etkinliğin ID'si :</label>
+                <label class="form-control">@item.Eid</label>
+            </div>
+            <div>
+                <label>Kategorisi :</label>
+                <label class="form-control">@item.Kategori</label>
+            </div>
+            <div>
+                <label>Açıklama:</label>
+            </div>
+            <label class="form-control">@item.EIcerik</label>
+            <div>
+                <label>Tarihi:</label>
+                <label class="form-control">@item.ETarih</label>
+            </div>
+            <div>
+                <label>Ücreti:</label>
+                <label class="form-control">@item.EUcret TL</label>
+            </div>
+            <div>
+                <label>Katılım Kapasitesi:</label>
+                <label class="form-control">@item.EBiletAdet Kişi</label>
+            </div>
+            <div>
+                <a href="@Url.Action("EtkinlikSil", new { id = item.Eid })"><input type="button" class="btn btn-success" />SİL</a>
+                <a href="@Url.Action("EtkinlikGuncelle", new { id = item.Eid })"><input type="button" class="btn btn-success" />GÜNCELLE</a>
+            </div>
+            <br />
+            <br />
+
+        }
+    }
+</form>
