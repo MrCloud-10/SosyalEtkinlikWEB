@@ -1,5 +1,5 @@
 # SosyalEtkinlikWEB
-This project has been created using MS Sql, C# .NET Core and MVC based.
+This project has been created using MS Sql, .NET Core and MVC based.
 
 ## Starting the Project
 Go package manager console and run 
